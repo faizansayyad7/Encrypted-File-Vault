@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Encrypted File Vault</title>
+
+<link rel="stylesheet"
+href="{{url_for('static',
+filename='style.css')}}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🔐 Encrypted File Vault</h1>
+
+<form method="POST"
+enctype="multipart/form-data">
+
+<input
+type="file"
+name="file"
+required>
+
+<input
+type="password"
+name="password"
+placeholder="Enter Password"
+required>
+
+<div class="buttons">
+
+<button
+type="submit"
+name="action"
+value="encrypt">
+
+Encrypt
+
+</button>
+
+<button
+type="submit"
+name="action"
+value="decrypt">
+
+Decrypt
+
+</button>
+
+</div>
+
+</form>
+
+{% if message %}
+
+<div class="message">
+
+{{message}}
+
+</div>
+
+{% endif %}
+
+</div>
+
+</body>
+</html>
