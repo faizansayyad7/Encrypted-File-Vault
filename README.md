@@ -20,6 +20,14 @@ A web-based cybersecurity project built with Flask and Python that securely encr
 * CSS
 
 ---
+## 📸 Project Screenshots
+
+### Home Page
+
+![Home Page](screenshots/home-page.png)
+
+---
+
 ## Author
 
 Faizan Sayyad
